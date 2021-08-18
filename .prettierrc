@@ -1,0 +1,7 @@
+{
+  "endOfLine": "auto",
+  "vueIndentScriptAndStyle": true,
+  "jsxBracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "singleQuote": true
+}

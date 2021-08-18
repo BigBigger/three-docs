@@ -1,0 +1,8 @@
+:root {
+  --c-brand: #1ba784;
+  --c-brand-light: #20c299;
+  --z-index-navbar: 50000;
+}
+.content > div > p {
+  text-indent: 2em;
+}
