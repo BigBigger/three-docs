@@ -2,9 +2,11 @@
  * @Description  : vitepress 配置文件
  * @Author       : BigBigger
  * @Date         : 2021-08-10 11:05:21
- * @LastEditTime : 2021-08-18 10:17:27
+ * @LastEditTime : 2021-08-18 11:02:47
  * @LastEditors  : BigBigger
  */
+
+const getRoutes = require('./router');
 
 /**
  * @type {import('vitepress').UserConfig}
@@ -55,6 +57,7 @@ module.exports = {
       },
     ],
     sidebar: {
+      ...getRoutes('docs'),
       '/': 'auto',
     },
   },
