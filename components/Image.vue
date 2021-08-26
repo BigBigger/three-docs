@@ -2,15 +2,13 @@
  * @Description  : 图片展示
  * @Author       : BigBigger
  * @Date         : 2021-08-16 14:03:46
- * @LastEditTime : 2021-08-17 10:00:42
+ * @LastEditTime : 2021-08-25 17:27:27
  * @LastEditors  : BigBigger
 -->
 <template>
-  <div>
+  <div class="demo-img">
     <img :src="src" :alt="`图 ${chapter}.${index}`" />
-    <div class="img-title">
-      图&nbsp;&nbsp;&nbsp;&nbsp;{{ chapter }}.{{ index }}
-    </div>
+    <div>图&nbsp;&nbsp;&nbsp;&nbsp;{{ chapter }}.{{ index }}</div>
   </div>
 </template>
 
@@ -25,7 +23,7 @@
 </script>
 
 <style>
-  .img-title {
+  .demo-img {
     text-align: center;
   }
 </style>

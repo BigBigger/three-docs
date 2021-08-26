@@ -1,11 +1,10 @@
 ---
-sidebar: false
 title: 目录
 ---
 
 # 目录 {#directory}
 
-## 第一章 使用Three.js创建你的第一个三维场景
+### 第一章 使用Three.js创建你的第一个三维场景 {#chapter1}
 
 * [01-basic-skeleton](/example/chapter1/01-basic-skeleton)
 
@@ -19,7 +18,7 @@ title: 目录
 
 * [06-screen-size-change](/example/chapter1/06-screen-size-change)
 
-## 第二章 构建Three.js应用的基本组件
+### 第二章 构建Three.js应用的基本组件 {#chapter2}
 
 * [01-basic-scene](/example/chapter2/01-basic-scene)
 
@@ -37,7 +36,7 @@ title: 目录
 
 * [08-cameras-lookat](/example/chapter2/08-cameras-lookat)
 
-## 第三章 学习使用Three.js中的光源
+### 第三章 学习使用Three.js中的光源 {#chapter3}
 
 * [01-ambient-light](/example/chapter3/01-ambient-light)
 
@@ -53,7 +52,7 @@ title: 目录
 
 * [07-lensflares](/example/chapter3/07-lensflares)
 
-## 第四章 使用Three.js的材质
+### 第四章 使用Three.js的材质 {#chapter4}
 
 * [01-basic-mesh-material](/example/chapter4/01-basic-mesh-material)
 
@@ -81,7 +80,7 @@ title: 目录
 
 * [13-line-material-dashed](/example/chapter4/13-line-material-dashed)
 
-## 第五章 学习使用几何体
+### 第五章 学习使用几何体 {#chapter5}
 
 * [01-basic-2d-geometries-plane](/example/chapter5/01-basic-2d-geometries-plane)
 
@@ -105,7 +104,7 @@ title: 目录
 
 * [11-basic-3d-geometries-polyhedron](/example/chapter5/11-basic-3d-geometries-polyhedron)
 
-## 第六章 高级几何体和二元操作
+### 第六章 高级几何体和二元操作 {#chapter6}
 
 * [01-advanced-3d-geometries-convex](/example/chapter6/01-advanced-3d-geometries-convex)
 
@@ -123,7 +122,7 @@ title: 目录
 
 * [08-binary-operations](/example/chapter6/08-binary-operations)
 
-## 第七章 粒子和精灵
+### 第七章 粒子和精灵 {#chapter7}
 
 * [01-sprites](/example/chapter7/01-sprites)
 
@@ -147,7 +146,7 @@ title: 目录
 
 * [11-create-particle-system-from-model](/example/chapter7/11-create-particle-system-from-model)
 
-## 第八章 创建、加载高级网络和几何体
+### 第八章 创建、加载高级网络和几何体 {#chapter8}
 
 * [01-grouping](/example/chapter8/01-grouping)
 
@@ -201,7 +200,7 @@ title: 目录
 
 * [26-load-svg](/example/chapter8/26-load-svg)
 
-## 第九章 创建动画和移动摄像机
+### 第九章 创建动画和移动摄像机 {#chapter9}
 
 * [01-basic-animation](/example/chapter9/01-basic-animation)
 
@@ -239,7 +238,7 @@ title: 目录
 
 * [18-animation-from-sea](/example/chapter9/18-animation-from-sea)
 
-## 第十章 加载和使用纹理
+### 第十章 加载和使用纹理 {#chapter10}
 
 * [00-template](/example/chapter10/00-template)
 
@@ -293,7 +292,7 @@ title: 目录
 
 * [test](/example/chapter10/test)
 
-## 第十一章 自定义着色器和后期处理
+### 第十一章 自定义着色器和后期处理 {#chapter11}
 
 * [00-template](/example/chapter11/00-template)
 
@@ -325,7 +324,7 @@ title: 目录
 
 * [107-shaderpass-custom](/example/chapter11/107-shaderpass-custom)
 
-## 第十二章 在场景中添加物理效果和声音
+### 第十二章 在场景中添加物理效果和声音 {#chapter12}
 
 * [00-template](/example/chapter12/00-template)
 
