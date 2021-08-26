@@ -6,3 +6,7 @@
 .content > div > p {
   text-indent: 2em;
 }
+table {
+  display: table;
+  width: 100%;
+}

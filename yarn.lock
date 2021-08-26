@@ -828,6 +828,11 @@ enquirer@^2.3.5:
   dependencies:
     ansi-colors "^4.1.1"
 
+entities@~2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
+  integrity sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==
+
 entities@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.1.0.tgz#992d3129cf7df6870b96c57858c249a120f8b8b5"
@@ -1491,10 +1496,28 @@ markdown-it-emoji@^2.0.0:
   resolved "https://registry.yarnpkg.com/markdown-it-emoji/-/markdown-it-emoji-2.0.0.tgz#3164ad4c009efd946e98274f7562ad611089a231"
   integrity sha512-39j7/9vP/CPCKbEI44oV8yoPJTpvfeReTn/COgRhSpNrjWF3PfP/JUxxB0hxV6ynOY8KH8Y8aX9NMDdo6z+6YQ==
 
+markdown-it-multimd-table@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/markdown-it-multimd-table/-/markdown-it-multimd-table-4.1.0.tgz#5c23eba9ceda580dc5c7301927a01610e0ee37b9"
+  integrity sha512-YNR7Td1gK3O+jLezL6Zfl80WNRn9iLAyXmCVAUSsTJ61drmJdHr7cWqr2CuWaSffBtnM0Zh0QBRUdmICoy+CDg==
+  dependencies:
+    markdown-it "^11.0.0"
+
 markdown-it-table-of-contents@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.5.2.tgz#2f941d386c277887910f2c7a8a16f5a17acb829c"
   integrity sha512-6o+rxSwzXmXCUn1n8QGTSpgbcnHBG6lUU8x7A5Cssuq5vbfzTfitfGPvQ5PZkp+gP1NGS/DR2rkYqJPn0rbZ1A==
+
+markdown-it@^11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-11.0.1.tgz#b54f15ec2a2193efa66dda1eb4173baea08993d6"
+  integrity sha512-aU1TzmBKcWNNYvH9pjq6u92BML+Hz3h5S/QpfTFwiQF852pLT+9qHsrhM9JYipkOXZxGn+sGH8oyJE9FD9WezQ==
+  dependencies:
+    argparse "^1.0.7"
+    entities "~2.0.0"
+    linkify-it "^3.0.1"
+    mdurl "^1.0.1"
+    uc.micro "^1.0.5"
 
 markdown-it@^12.0.6:
   version "12.2.0"

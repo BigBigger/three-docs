@@ -2,7 +2,7 @@
  * @Description  : vitepress 配置文件
  * @Author       : BigBigger
  * @Date         : 2021-08-10 11:05:21
- * @LastEditTime : 2021-08-18 11:02:47
+ * @LastEditTime : 2021-08-25 17:18:31
  * @LastEditors  : BigBigger
  */
 
@@ -30,6 +30,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '学习日志', link: '/docs/' },
+      { text: '原书示例', link: '/example/' },
       {
         text: '相关链接',
         items: [
@@ -58,7 +59,7 @@ module.exports = {
     ],
     sidebar: {
       ...getRoutes('docs'),
-      '/': 'auto',
+      ...getRoutes('example'),
     },
   },
   markdown: {
@@ -66,7 +67,13 @@ module.exports = {
       renderPermalink: require('./utils/render-perma-link'),
     },
     config: (md) => {
-      md.use(require('./utils/markdown-it-custom-anchor'));
+      md.use(require('./utils/markdown-it-custom-anchor')).use(
+        require('markdown-it-multimd-table'),
+        {
+          multiline: true,
+          rowspan: true,
+        }
+      );
     },
   },
 };
