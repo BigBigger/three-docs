@@ -34,9 +34,9 @@ title: 目录
 
 * [第四节 总结](/docs/chapter2/04)
 
-### [第三章 学习使用Three.js中的光源](/docs/chapter3/) {#chapter3}
+### [第三章 学习使用 Three.js 中的光源](/docs/chapter3/) {#chapter3}
 
-* [第一节 Three.js中不同种类的光源](/docs/chapter3/01)
+* [第一节 Three.js 中不同种类的光源](/docs/chapter3/01)
 
 * [第二节 基础光源](/docs/chapter3/02)
 
@@ -44,7 +44,7 @@ title: 目录
 
 * [第四节 总结](/docs/chapter3/04)
 
-### [第四章 使用Three.js中的材质](/docs/chapter4/) {#chapter4}
+### [第四章 使用 Three.js 中的材质](/docs/chapter4/) {#chapter4}
 
 * [第一节 理解材质的共有属性](/docs/chapter4/01)
 
@@ -58,7 +58,7 @@ title: 目录
 
 ### [第五章 学习使用几何体](/docs/chapter5/) {#chapter5}
 
-* [第一节 Three.js提供的基础几何体](/docs/chapter5/01)
+* [第一节 Three.js 提供的基础几何体](/docs/chapter5/01)
 
 * [第二节 总结](/docs/chapter5/02)
 
@@ -82,15 +82,15 @@ title: 目录
 
 * [第一节 理解粒子](/docs/chapter7/01)
 
-* [第二节 THREE.Points和THREE.PointsMaterial](/docs/chapter7/02)
+* [第二节 THREE.Points 和 THREE.PointsMaterial](/docs/chapter7/02)
 
-* [第三节 使用HTML5画布样式化粒子](/docs/chapter7/03)
+* [第三节 使用 HTML5 画布样式化粒子](/docs/chapter7/03)
 
 * [第四节 使用纹理样式化粒子](/docs/chapter7/04)
 
 * [第五节 使用精灵贴图](/docs/chapter7/05)
 
-* [第六节 从高级几何体创建THREE.Points](/docs/chapter7/06)
+* [第六节 从高级几何体创建 THREE.Points](/docs/chapter7/06)
 
 * [第七节 总结](/docs/chapter7/07)
 
@@ -126,11 +126,11 @@ title: 目录
 
 ### [第十一章 自定义着色器和后期处理](/docs/chapter11/) {#chapter11}
 
-* [第一节 配置Three.js以进行后期处理](/docs/chapter11/01)
+* [第一节 配置 Three.js 以进行后期处理](/docs/chapter11/01)
 
 * [第二节 后期处理通道](/docs/chapter11/02)
 
-* [第三节 使用THREE.ShaderPass自定义效果](/docs/chapter11/03)
+* [第三节 使用 THREE.ShaderPass 自定义效果](/docs/chapter11/03)
 
 * [第四节 创建自定义后期处理着色器](/docs/chapter11/04)
 
@@ -138,11 +138,11 @@ title: 目录
 
 ### [第十二章 加载和使用纹理](/docs/chapter12/) {#chapter12}
 
-* [第一节 创建基本的Three.js场景](/docs/chapter12/01)
+* [第一节 创建基本的 Three.js 场景](/docs/chapter12/01)
 
-* [第二节 Physi.js材质属性](/docs/chapter12/02)
+* [第二节 Physi.js 材质属性](/docs/chapter12/02)
 
-* [第三节 Physi.js基础形体](/docs/chapter12/03)
+* [第三节 Physi.js 基础形体](/docs/chapter12/03)
 
 * [第四节 使用约束限制对象的移动](/docs/chapter12/04)
 
