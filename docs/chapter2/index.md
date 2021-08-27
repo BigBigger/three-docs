@@ -1,3 +1,6 @@
+---
+title: 第二章 构建 Three.js 应用的基本组件
+---
 # 第二章 构建 Three.js 应用的基本组件 {#chapter2}
 
 在[第 1 章](/docs/chapter1/)中我们介绍了 Three.js 库的基础知识。通过示例展示了 Three.js 是如何工作的，然后创建了第一个完整的 Three.js 应用。在本章中我们将会深入了解 Three.js 库，介绍构建 Three.js 应用的基本组件。通过本章你将了解以下内容：
