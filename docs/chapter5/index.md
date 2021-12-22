@@ -35,7 +35,7 @@ title: 第五章 学习使用几何体
 | 属性 | 描述 |
 | --- | --- |
 | attributes(分量) | `分量` 属性所存储的信息将被直接送往 GPU 进行处理。比如，若要定义一个形体，你需要至少创建一个 `Float32Array` 数组，其中每三个数组元素指定了一个顶点的三维空间坐标，而每三个顶点(即该数组中每九个元素)确定一个面。该数组可以向下面这样创建并添加到分量属性中： `geometry.addAttribute( position',new THREE.BufferAttribute(arrayOfVertices, 3));` |
-| idnex(索引) | 一般不需要特意指定面，因为默认情况下 position (位置)分量中每三个空间坐标确定一个面。但我们也可以通过 `index` 属性像 `THREE.Geometry` 类一样去指定用于组成每一个面的顶点 |
+| index(索引) | 一般不需要特意指定面，因为默认情况下 position (位置)分量中每三个空间坐标确定一个面。但我们也可以通过 `index` 属性像 `THREE.Geometry` 类一样去指定用于组成每一个面的顶点 |
 
 在本章的示例程序中，你暂时无须关心这两个几何体类的区别。如果想使用基于 `THREE.Geometry` 类的几何体，可以使用本章开始时罗列的几何体类；而如果想使用这些几何体基于 `THREE.BufferGeometry` 类的等价实现，则直接在类名中加上“Buffer”即可。例如将 `THREE.PlaneGeometry` 改为 `THREE.PlaneBufferGeometry` 即可，其他几何体类与之类似。接下来让我们看看 Three.js 提供的所有基础几何体。
 

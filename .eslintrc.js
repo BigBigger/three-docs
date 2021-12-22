@@ -2,7 +2,7 @@
  * @Description  : eslint配置
  * @Author       : XiaoLei
  * @Date         : 2021-04-09 14:54:55
- * @LastEditTime : 2021-08-17 16:06:31
+ * @LastEditTime : 2021-12-22 16:10:40
  * @LastEditors  : BigBigger
  */
 module.exports = {
@@ -48,5 +48,11 @@ module.exports = {
     // 组件 prop 必须有默认值，没必要限制
     'vue/require-default-prop': 'off',
     semi: ['error', 'always'],
+  },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly',
+    withDefaults: 'readonly',
   },
 };
