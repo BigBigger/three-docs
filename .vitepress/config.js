@@ -2,7 +2,7 @@
  * @Description  : vitepress 配置文件
  * @Author       : BigBigger
  * @Date         : 2021-08-10 11:05:21
- * @LastEditTime : 2022-01-06 13:57:58
+ * @LastEditTime : 2022-01-07 15:56:24
  * @LastEditors  : BigBigger
  */
 const getRoutes = require('./router');
@@ -15,7 +15,7 @@ module.exports = {
   lang: 'zh-CN',
   description: 'threejs 学习日志',
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       'script',
       {},
@@ -32,11 +32,7 @@ module.exports = {
       open: true, // 自动打开浏览器
       port: 8888, // 端口号
     },
-    plugins: [
-      require('rollup-plugin-copy')({
-        targets: [{ src: 'baidu_verify_code-3SP1NLQftg.html', dest: 'dist' }],
-      }),
-    ],
+    plugins: [],
   },
   themeConfig: {
     nav: [
