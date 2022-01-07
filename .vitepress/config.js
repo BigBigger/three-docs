@@ -2,10 +2,9 @@
  * @Description  : vitepress 配置文件
  * @Author       : BigBigger
  * @Date         : 2021-08-10 11:05:21
- * @LastEditTime : 2021-08-25 17:18:31
+ * @LastEditTime : 2022-01-06 13:57:58
  * @LastEditors  : BigBigger
  */
-
 const getRoutes = require('./router');
 
 /**
@@ -15,7 +14,14 @@ module.exports = {
   title: 'Three Learning',
   lang: 'zh-CN',
   description: 'threejs 学习日志',
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    [
+      'script',
+      {},
+      'var _hmt = _hmt || [];\n(function() {\n var hm = document.createElement("script");\n hm.src = "https://hm.baidu.com/hm.js?9e00c1ed3f1180817a54d8cd56add3e6";\n var s = document.getElementsByTagName("script")[0];\n s.parentNode.insertBefore(hm, s);\n})();',
+    ],
+  ],
   vite: {
     build: {
       brotliSize: false,
@@ -26,6 +32,11 @@ module.exports = {
       open: true, // 自动打开浏览器
       port: 8888, // 端口号
     },
+    plugins: [
+      require('rollup-plugin-copy')({
+        targets: [{ src: 'baidu_verify_code-3SP1NLQftg.html', dest: 'dist' }],
+      }),
+    ],
   },
   themeConfig: {
     nav: [
