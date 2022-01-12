@@ -35,15 +35,13 @@ jobs:
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
           PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
         run: |
-          echo "${EXTERNAL_REPOSITORY}"
-          echo "${GITHUB_REPOSITORY}"
           cd .vitepress/dist
           SSH_DIR="${HOME}/.ssh"
           mkdir "${SSH_DIR}"
           ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
           echo "${ACCESS_TOKEN_DEPLOY}" >"${SSH_DIR}/id_rsa"
           chmod 600 "${SSH_DIR}/id_rsa"
-          remote_repo="git@github.com:BigBigger/test-github-action.git"
+          remote_repo="git@github.com:${GITHUB_REPOSITORY}.git"
           git init
           git checkout --orphan "${GITHUB_BRANCH}"
           git config user.name "${GITHUB_ACTOR}"
