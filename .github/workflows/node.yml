@@ -29,7 +29,7 @@ jobs:
       - name: 3. deploy
         env:
           ACCESS_TOKEN_DEPLOY: ${{ secrets.ACCESS_TOKEN_DEPLOY }}
-          GITHUB_BRANCH: gh-pages
+          GITHUB_BRANCH: main
           SSH_HOST: ${{ secrets.SSH_HOST }}
           SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
@@ -41,7 +41,7 @@ jobs:
           ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
           echo "${ACCESS_TOKEN_DEPLOY}" >"${SSH_DIR}/id_rsa"
           chmod 600 "${SSH_DIR}/id_rsa"
-          remote_repo="git@github.com:BigBigger/test-github-action.git"
+          remote_repo="git@github.com:BigBigger/gh-pages.git"
           git init
           git checkout --orphan "${GITHUB_BRANCH}"
           git config user.name "${GITHUB_ACTOR}"
