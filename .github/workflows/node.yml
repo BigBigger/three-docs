@@ -35,6 +35,8 @@ jobs:
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
           PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
         run: |
+          echo "${EXTERNAL_REPOSITORY}"
+          echo "${GITHUB_REPOSITORY}"
           cd .vitepress/dist
           SSH_DIR="${HOME}/.ssh"
           mkdir "${SSH_DIR}"
