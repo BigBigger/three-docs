@@ -2,7 +2,7 @@
  * @Description  : vitepress 配置文件
  * @Author       : BigBigger
  * @Date         : 2021-08-10 11:05:21
- * @LastEditTime : 2022-01-12 16:18:06
+ * @LastEditTime : 2022-01-12 16:27:54
  * @LastEditors  : BigBigger
  */
 const getRoutes = require('./router');
@@ -14,9 +14,7 @@ module.exports = {
   title: 'Three Learning',
   lang: 'zh-CN',
   description: 'threejs 学习日志',
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   vite: {
     build: {
       brotliSize: false,
