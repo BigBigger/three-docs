@@ -1,0 +1,56 @@
+name: build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: 1. set node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: 2. install
+        run: |
+          rm -rf node_modules
+          yarn --frozen-lockfile
+          yarn build
+
+      - name: 3. deploy
+        env:
+          ACCESS_TOKEN_DEPLOY: ${{ secrets.ACCESS_TOKEN_DEPLOY }}
+          GITHUB_BRANCH: gh-pages
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          PROJECT_DIR: ${{ secrets.PROJECT_DIR }}
+        run: |
+          cd .vitepress/dist
+          SSH_DIR="${HOME}/.ssh"
+          mkdir "${SSH_DIR}"
+          ssh-keyscan -t rsa github.com >"${SSH_DIR}/known_hosts"
+          echo "${ACCESS_TOKEN_DEPLOY}" >"${SSH_DIR}/id_rsa"
+          chmod 600 "${SSH_DIR}/id_rsa"
+          remote_repo="git@github.com:BigBigger/test-github-action.git"
+          git init
+          git checkout --orphan "${GITHUB_BRANCH}"
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git remote rm origin || true
+          git remote add origin "${remote_repo}"
+          cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+          git add .
+          push_time="$(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "[Deployment success]: ${push_time}"
+          git push origin -f "${GITHUB_BRANCH}"
+          echo "${GITHUB_SHA} deploy successful: ${push_time}"
